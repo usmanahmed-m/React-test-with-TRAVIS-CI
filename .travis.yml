@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "stable"
 
+cache:
+  dependencies: node_modules
+
 script:
   - npm install
   - npm test
@@ -11,7 +14,7 @@ deploy:
   provider: surge
   skip_cleanup: true
   domain: piaic-bootcamp2020-rtdd-w-travis.surge.sh
-  project: ./build
+  project: ./build/
 
 on:
   branch: master
