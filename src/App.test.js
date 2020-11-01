@@ -7,7 +7,7 @@ test("Hello World", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("Hello World", () => {
+test("Test Driven", () => {
   render(<App />);
   const linkElement = screen.getByText(/Test Driven Development/i);
   expect(linkElement).toBeInTheDocument();
