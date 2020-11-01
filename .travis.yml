@@ -12,7 +12,7 @@ script:
 
 deploy:
   provider: surge
-  skip_cleanup: true
+  cleanup: true
   domain: piaic-bootcamp2020-rtdd-w-travis.surge.sh
   project: ./build/
 
