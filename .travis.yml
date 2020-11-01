@@ -12,3 +12,6 @@ deploy:
   cleanup: true
   domain: piaic-bootcamp2020-rtdd-w-travis.surge.sh
   project: ./build/
+
+on:
+  branch: master
